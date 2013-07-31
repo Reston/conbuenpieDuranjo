@@ -1,7 +1,7 @@
 #!/usr/local/bin/python
 # -*- coding: utf-8 -*-
 from django.shortcuts import render_to_response
-from duranjo.apps.homepage.forms import *
+from conbuenpieDuranjo.apps.homepage.forms import *
 from django.template import RequestContext
 from django.core.mail import send_mail
 
