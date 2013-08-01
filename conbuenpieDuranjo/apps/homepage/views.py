@@ -4,10 +4,15 @@ from django.shortcuts import render_to_response
 from conbuenpieDuranjo.apps.homepage.forms import *
 from django.template import RequestContext
 from django.core.mail import send_mail
+from conbuenpieDuranjo.apps.homepage.models import Galeria
 
 
-def index(request):
+def index(request, template='homepage/index.html', page_template='homepage/index_galeria.html'):
 	success = False
+	imagenes = Galeria.objects.all()
+	if not imagenes:
+		page_template='homepage/index_galeria_nohay.html'
+		imagenes = None
 	if request.method == 'POST':
 		form = contactForm(request.POST)
 		if form.is_valid():
@@ -18,5 +23,7 @@ def index(request):
 			send_mail(asunto, content, cd['email'], ['info@duranjo.com'])
 	else:
 		form = contactForm()
-	ctx = {'form': form, 'success': success}
-	return render_to_response('homepage/index.html', ctx, context_instance=RequestContext(request))
+	if request.is_ajax():
+		template = page_template
+	ctx = {'form': form, 'success': success, 'imagenes': imagenes, 'page_template': page_template}
+	return render_to_response(template, ctx, context_instance=RequestContext(request))

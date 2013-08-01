@@ -2,23 +2,23 @@
 {% load url from future %}
 {% load staticfiles %}
 {% block head %} 
-<meta name="description" content="">
+<meta name="description" content="Página oficial de Con Buen Pie programa de radio emitido en la emisora Feria 106.9 FM de Lunes a Viernes de 10 AM a  11 AM">
 {% endblock%}
 {% block title %}
 Con Buen Pie - Inicio
 {% endblock%}
 {% block css%}
-<link rel="stylesheet" href="{{ STATIC_URL }}css/index.css">
 {% endblock %}
 {% block js %}
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}js/adquiridos/back-top.js"></script>
+<script src="{% static 'js/propios/menuByScroll.js' %}"></script>
 {% endblock %}
 {% block navi %}
 		<ul>
-			<li class="index"><a href="#">Inicio</a></li>
-			<li class="services"><a href="#galeria">Galería</a></li>
-			<li class="contact"><a href="#contacto">Contacto</a></li>
+			<li id="homeMenu" class="index"><a href="#home">Inicio</a></li>
+			<li id="galeriaMenu" class="services"><a href="#galeria">Galería</a></li>
+			<li id="contactoMenu" class="contact"><a href="#contacto">Contacto</a></li>
 		</ul>				
 {% endblock %}
 {% block clear %}{% endblock%}
@@ -35,7 +35,9 @@ Con Buen Pie - Inicio
 	<section class="transmision">
 		<div class="wrapper">
 			<p>En vivo de Lunes a Viernes de 10:00 AM a 11:00 AM.</p>
-			<div class="reproducto"></div>
+			<div class="reproducto">
+				<iframe width="850" height="500" src="http://www.ustream.tv/embed/4706359?v=3&amp;wmode=direct" scrolling="no" frameborder="0" style="border: 0px none transparent;"></iframe>
+			</div>
 		</div>
 	</section>
 	<section id="galeria" class="aboutus">
@@ -52,14 +54,10 @@ Con Buen Pie - Inicio
 				<div class="imagenGrande">
 					<img src="{% static 'img/presentadores.png' %}" alt="nada">
 				</div>				
-				<div class="imagenes">
-					<ul>
-						<li><img src="{% static 'img/presentadores.png' %}" alt="asd2"></li>
-						<li><img src="{% static 'img/presentadores.png' %}" alt="asd3"></li>
-						<li><img src="{% static 'img/presentadores.png' %}" alt="asd4"></li>
-						<li><img src="{% static 'img/presentadores.png' %}" alt="asd5"></li>
-						<li><img src="{% static 'img/presentadores.png' %}" alt="asd6"></li>
-					</ul>
+				<div class="endless_page_template">					
+						{% include page_template %}
+						<script src="{{ STATIC_URL }}endless_pagination/js/endless-pagination.js"></script>
+						<script>$.endlessPaginate();</script>
 				</div>
 			</div>	
 		</div>

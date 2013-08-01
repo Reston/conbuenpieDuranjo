@@ -1,6 +1,6 @@
 @charset 'utf-8';
 body{
-	margin: 0
+	margin: 0;
 }
 img{
 	width: auto;
@@ -10,6 +10,7 @@ a img {border: none; }
 h1{
 	margin: 0;
 	color: white;
+	font-family: 'Lobster', Helvetica, Arial;
 	text-shadow: 9px 7px 1px rgba(0, 0, 0, 0.53);
 	font-size: 2.8em;
 }
@@ -156,10 +157,16 @@ nav ul li a{
 	height: 80px;
 	z-index: 1;
 }
-.imagenes ul li{
+.endless_page_template ul{
+	list-style: none;
+}
+.endless_page_template ul li{
 	display: inline-block;
 }
-.imagenes ul li img{
+.endless_page_template ul li a img{
+	width: 150px;
+}
+.foto{
 	width: 150px;
 }
 .logoblanco{
@@ -319,6 +326,37 @@ footer{
 	font-size: 1.5em;
 	margin-right: 25px;
 }
+
+/* Configuración pagination */
+.endless_page_template{
+	margin-bottom: 25px;
+}
+.pagination{
+	text-align: center;
+}
+.endless_page_link, .endless_page_current{
+	color: #707070;
+	background: #FFF;	
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: solid 1px #DCDCDC;
+	padding: 6px 9px 6px 9px;
+	text-decoration: none;
+	margin-left: 5px;
+}
+.endless_page_link:hover, .endless_page_current{
+	color: white;
+	-moz-text-shadow: 0 1px #4E802C;
+	-webkit-text-shadow: 0 1px #4E802C;
+	-ms-text-shadow: 0 1px #4E802C;
+	text-shadow: 0 1px #4E802C;
+	border-color: #478223;
+	background: #599F2F;
+	background: -moz-linear-gradient(top, #9FE355 1px, #79BF4A 1px, #599F2F);
+	background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.02, #9FE355), color-stop(0.02, #79BF4A), color-stop(1, #599F2F));
+}
+
 /* Configuración NUBES */
 /*Time to finalise the cloud shape*/
 .cloud {

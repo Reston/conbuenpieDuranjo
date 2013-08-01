@@ -130,6 +130,8 @@ INSTALLED_APPS = (
     'django.contrib.humanize',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
+    'conbuenpieDuranjo.apps.homepage',
+    'endless_pagination',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
@@ -172,6 +174,13 @@ TEMPLATE_CONTEXT_PROCESSOR = (
     'django.core.context_processors.static',
 )
 
+#configuracion endless-pagination
+from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS
+TEMPLATE_CONTEXT_PROCESSORS += (
+    'django.core.context_processors.request',
+)
+
+ENDLESS_PAGINATION_PER_PAGE = 8
 
 #Configuraciones para enviar mensajes usando gmail
 EMAIL_USE_TLS = True

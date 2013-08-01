@@ -1,0 +1,13 @@
+{% load endless %}
+{% load staticfiles %}
+{% paginate imagenes %}
+<ul>
+{% for imagen in imagenes %}
+<li>
+	<a href="{{ imagen.imagen.url }}">
+		<img class="foto" src="{{ MEDIA_URL }}/{{ imagen.imagen }}" alt="{{imagen.titulo}} imagen">
+	</a>
+</li>
+{% endfor %}
+</ul>
+<div class="pagination">{% show_pages %}</div>
