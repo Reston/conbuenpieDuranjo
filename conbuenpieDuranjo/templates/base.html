@@ -16,6 +16,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="{{ STATIC_URL }}img/favicon.ico">
 <title>{% block title %} {% endblock%}</title>
 <link rel="stylesheet" href="{{ STATIC_URL }}css/normalize.css">
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
 {% block css %}
 {% endblock %}
 {% block js %}
@@ -33,7 +34,10 @@
 	  ga('send', 'pageview');
 	</script> -->
 	<header id="home" class="cabecera">
-		<div class="wrapper">				
+		<div class="wrapper">			
+			<div class="logoconbuenpie">
+				<img src="{% static 'img/logoconbuenpie.png' %}" alt="Logo de Con Buen Pie">
+			</div>			
 			<nav class="barraNavegacion">
 				{% block navi %} {% endblock%}
 			</nav>
@@ -46,9 +50,26 @@
 	<footer>
 		{% block footer %}{% endblock%}
 		<div class="wrapper">
+			<p class="fraseFooter">En vivo de Lunes a Viernes de 10:00 AM a 11:00 AM.</p>
 			<div class="footer-der">
+				<div class="logoblanco"></div>
+				Copyright © 2013, Todos los derechos reservados.
+			</div>
+			<div class="footer-med">
+				<ul class="listaMenuFooter">
+					<li class="index"><a href="#">Inicio</a></li>
+					<li class="services"><a href="#galeria">Galería</a></li>
+					<li class="contact"><a href="#contacto">Contacto</a></li>
+				</ul>
+
 			</div>
 			<div class="footer-izq">
+				Diseño y Desarrollo por:
+				<div class="logoDuranjo">
+					<a href="http://duranjo.com/">
+						<img src="{% static 'img/duranjowhite.png' %}" alt="Duranjo Web C.A. Logo">
+					</a>
+				</div>
 			</div>		  
 		</div>
 	</footer>

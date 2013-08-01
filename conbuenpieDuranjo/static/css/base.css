@@ -1,1 +1,386 @@
 @charset 'utf-8';
+body{
+	margin: 0
+}
+img{
+	width: auto;
+	height: auto;
+}
+a img {border: none; }
+h1{
+	margin: 0;
+	color: white;
+	text-shadow: 9px 7px 1px rgba(0, 0, 0, 0.53);
+	font-size: 2.8em;
+}
+.wrapper{
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto 0 auto;
+}
+
+/* HEADER */
+header{
+	background: #30bdea; /* Old browsers */
+	background: -moz-linear-gradient(top,  #30bdea 1%, #b5dfef 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#30bdea), color-stop(100%,#b5dfef)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #30bdea 1%,#b5dfef 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #30bdea 1%,#b5dfef 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #30bdea 1%,#b5dfef 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #30bdea 1%,#b5dfef 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30bdea', endColorstr='#b5dfef',GradientType=0 ); /* IE6-9 */
+
+	display: inline-block;
+	width: 100%;
+}
+header .wrapper{
+	position: relative;
+}
+.logoconbuenpie{
+	margin-top: 175px;
+	text-align: right;
+}
+nav{
+	margin-right: 5%;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	text-align: right;
+}
+nav ul{
+	margin: 0;
+	padding: 0
+}
+nav ul li{
+	display: inline-block;
+}
+nav ul li a{
+	color: #444447;
+	font-size: 1.7em;
+	margin-right: 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+/* end header */
+.contenido{
+	background: #29632B;
+}
+/* == GRAMA == */
+.grama{
+	background: #A6C83C; /* Old browsers */
+	background: -moz-linear-gradient(top,  #A6C83C 1%, #759C2C 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#A6C83C), color-stop(100%,#759C2C)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #A6C83C 1%,#759C2C 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #A6C83C 1%,#759C2C 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #A6C83C 1%,#759C2C 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #A6C83C 1%,#759C2C 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A6C83C', endColorstr='#759C2C',GradientType=0 ); /* IE6-9 */
+
+	position: relative;
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 80px;
+}
+.grama > .wrapper{
+	position: relative;
+}
+.presentadores{
+	background: url(../img/presentadores.png) no-repeat center;
+	position: absolute;
+	width: 508px;
+	height: 490px;
+	top: -290px;
+	z-index: 5;
+}
+.tituloPrincipal{
+	width: 57%;
+	margin-left: 43%;
+}
+.rayagris{
+	position: absolute;
+	top: 82px;
+	background: #C8CFCC;
+	height: 40px;
+	width: 100%;
+	border-bottom: 3px solid #767A6E;
+	box-shadow: 0 7px 0 #2D3B2B;
+}
+
+/* ==  Transmisión == */
+.transmision p{
+	text-align: right;
+	color: #FFF;
+	font-size: 1.5em;
+	text-shadow: 1px 1px 1px #000;
+}
+.reproducto{
+	height: 500px;
+	width: 850px;
+	background: black;
+	margin: 0 auto 0 auto;
+}
+/* ==  Galería == */
+.aboutus{
+	margin-top: 50px;
+	background: url(../img/notasmusicales.png) no-repeat;
+	background-position: bottom;
+}
+.aboutus  .galeria{
+	width: 62%;
+	display: inline-block;
+	vertical-align: top;
+}
+.aboutus .info{
+	padding: 0 0 0 40px;
+	vertical-align: top;
+	display: inline-block;
+	width: 34%;
+	color: white;
+	position: relative;
+}
+.titulo{
+	text-transform: uppercase;
+	font-size: 2.5em;
+}
+.mataCosita{
+	position: absolute;
+	top: -22px;
+	left: -4px;
+	background: url(../img/cositas.png) 0 0;
+	width: 75px;
+	height: 80px;
+	z-index: 1;
+}
+.imagenes ul li{
+	display: inline-block;
+}
+.imagenes ul li img{
+	width: 150px;
+}
+.logoblanco{
+	background: url(../img/logosenblanco.png) no-repeat 0 0;
+	width: 220px;
+	height: 85px;
+	margin: 0 auto 0 auto;
+}
+.pajaritos{
+	background: url(../img/pajaros.png) no-repeat;
+	width: 506px;
+	height: 196px;
+	margin-top: 30px;
+}
+.imagenGrande{
+	position: relative;
+	background: url(../img/cuadro.png) no-repeat;
+	width: 691px;
+	height: 527px;
+	padding: 4%;
+	z-index: 5;
+}
+.imagenGrande > img{
+	max-width: 634px;
+	max-height: 473px;
+}
+/* ==  Contacto == */
+.infoContacto{color: white}
+.cercaBlanca{
+	background: url(../img/cerca.png);
+	width: 100%;
+	height: 102px;
+	border-bottom: 10px solid #C9D8C9;
+}
+.contacto{
+	background: url(../img/texturacontacto.jpg);
+	padding: 50px 0;
+
+}
+.contacto > .wrapper{
+	position: relative;
+}
+.contacto .titulo{
+	margin: 0;
+}
+.sectionContacto{
+	vertical-align: top;
+	display: inline-block;
+	width: 33%;
+}
+form .sectionContacto{
+	width: 49%;
+}
+.mataCosita2{
+	position: absolute;
+	top: -60px;
+	left: -30px;
+	background: url(../img/cositas.png) 119px 0;
+	width: 75px;
+	height: 80px;
+	z-index: 1;
+}
+form{
+	width: 66%;
+	display: inline-block;
+}
+/* FORM CONTACTO CSS*/
+.tituloContacto{
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+.campo{
+	margin: 0 auto 10px auto;
+}
+
+.campo input{
+	background: #E6E7E7;
+	border: 1px solid #CCCCCC;
+	text-indent: 5px;
+	height: 33px;
+	width: 84%;
+}
+.campo input, textarea{
+	border-radius: 10px;
+}
+.campo label{
+	float: left;
+	width: 350px;
+	margin-bottom: 3px;
+}
+textarea{
+	background: #E6E7E7;
+	border: 1px solid #CCCCCC;
+	width: 84%;
+}
+.errorlist{
+	border: 1px solid #F00;
+	background: #FFC0CB;
+	color: #F00;
+	list-style: none;
+	margin: 10px 0;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	width: 82%;
+	text-shadow: 0px 1px rgba(255, 255, 255, 0.5);
+	padding: 10px 0 10px 2%;
+}
+.enviado{
+	border: 1px solid #008000;
+	background: lightgreen;
+	color: #008000;
+	margin: 10px 0;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	width: 82%;
+	text-shadow: 0px 1px rgba(255, 255, 255, 0.5);
+	padding: 10px 0 10px 2%;
+}
+input[type="submit"]{
+	margin-top: 10px;
+	background: #3F8F25;
+	padding: 5px 20px;
+	border: none;
+	color: whitesmoke;
+	text-transform: uppercase;
+}
+/* end form contacto css*/
+/* FOOTER */
+footer{
+	color: white;
+	background: #634A11;
+	border-top: 5px solid #866C44;
+}
+.fraseFooter{
+	text-align: center;
+	margin: 0;
+	padding: 25px 0;
+	font-size: 2em;
+}
+.footer-der, .footer-med, .footer-izq{
+	display: inline-block;
+	width: 33%;
+	vertical-align: top;
+}
+.footer-izq{
+	text-align: right;
+}
+.listaMenuFooter ul{
+	margin:0;
+	padding: 0;
+}
+.listaMenuFooter li{
+	display: inline-block;
+}
+.listaMenuFooter a{
+	text-decoration: none;
+	color: white;
+	font-size: 1.5em;
+	margin-right: 25px;
+}
+/* Configuración back to top button */
+
+.back-top {
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	z-index: 1;
+}
+
+.back-top a {
+	width: 108px;
+	display: block;
+	text-align: center;
+	font: 11px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+.back-top a:hover {
+	color: #000;
+}
+
+	/* arrow icon (span tag) */
+.back-top span {
+	width: 70px;
+	height: 70px;
+	display: block;
+	margin: 0 auto 7px auto;
+	font-size: 0;
+	background: rgb(75, 75, 75) url(../img/up-arrow.png) no-repeat center center;
+
+	/* rounded corners */
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+.back-top a:hover span {
+	background-color: #777;
+}
+
+@media screen and (max-width: 1200px){
+	/* configuración back-to-top responsive */
+	.back-top a{
+		width: 60px;
+	}
+	.back-top span {
+		width: 40px;
+		height: 40px;
+		font-weight: bold;
+		font-size: 4em;
+		line-height: 30px;
+		background: none;
+		margin: 0 auto 0 auto;
+	}
+	.back-top a:hover span {
+		background:none;
+	}
+	/* END CONFIG back-to-top */
+
+}
