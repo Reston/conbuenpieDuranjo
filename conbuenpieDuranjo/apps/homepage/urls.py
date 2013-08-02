@@ -4,3 +4,4 @@ urlpatterns = patterns(
 	'conbuenpieDuranjo.apps.homepage.views',
 	url(r'^$', 'index', name="homepageindex"),
 )
+

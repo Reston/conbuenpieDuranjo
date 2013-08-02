@@ -13,4 +13,4 @@ class Galeria(models.Model):
 
 	def get_absolute_url(self):
 		titulo = self.titulo.replace(' ', '_')
-		return reverse('galeria', kwargs={'titulo': titulo})
+		return reverse('indexindex', kwargs={'titulo': titulo})

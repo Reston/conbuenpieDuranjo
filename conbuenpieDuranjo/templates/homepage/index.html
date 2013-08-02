@@ -8,11 +8,14 @@
 Con Buen Pie - Inicio
 {% endblock%}
 {% block css%}
+<link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
 {% endblock %}
 {% block js %}
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}js/adquiridos/back-top.js"></script>
 <script src="{% static 'js/propios/menuByScroll.js' %}"></script>
+<script src="{% static 'js/propios/toChangeImage.js' %}"></script>
+<script src="{% static 'js/adquiridos/jquery.flexslider-min.js' %}"></script>
 {% endblock %}
 {% block navi %}
 		<ul>
@@ -23,6 +26,7 @@ Con Buen Pie - Inicio
 {% endblock %}
 {% block clear %}{% endblock%}
 {% block contenido %}
+<!--  GRAMA -->
 	<section class="grama">
 		<div class="rayagris"></div>
 		<div class="wrapper">
@@ -40,6 +44,7 @@ Con Buen Pie - Inicio
 			</div>
 		</div>
 	</section>
+<!--  GALERIA -->
 	<section id="galeria" class="aboutus">
 		<div class="wrapper">
 			<div class="info">
@@ -50,28 +55,58 @@ Con Buen Pie - Inicio
 				<div class="logoblanco"></div>
 				<div class="pajaritos"></div>
 			</div>
-			<div class="galeria">
-				<div class="imagenGrande">
-					<img src="{% static 'img/presentadores.png' %}" alt="nada">
-				</div>				
-				<div class="endless_page_template">					
-						{% include page_template %}
-						<script src="{{ STATIC_URL }}endless_pagination/js/endless-pagination.js"></script>
-						<script>$.endlessPaginate();</script>
-				</div>
+			<div class="galeria">		
+					<div class="endless_page_template">
+							{% include page_template %}
+							<script src="{{ STATIC_URL }}endless_pagination/js/endless-pagination.js"></script>
+							<script>$.endlessPaginate();</script>
+					</div>
 			</div>	
 		</div>
 	</section>
+<!--  CONTACTO -->
 	<section id="contacto" class="infoContacto">
 		<div class="cercaBlanca"></div>
 		<div class="contacto">
 			<div class="wrapper">
 				<h2 class="titulo"><div class="mataCosita2"></div>Contacto</h2>
 				<div class="sectionContacto">
-					<div class="opcionContacto">Correo: contacto@conbuenpie.com.ve</div>
-					<div class="redesSociales">
-						<a href="https://www.facebook.com/conbuenpiemcbo"><div class="facebookIcon"></div></a>
-						<a href="https://www.twitter.com/conbuenpiemcbo"><div class="twitterIcon"></div></a>
+					<div class="opcionInfo">
+						<div class="tituloOpcionInfo">Correo:</div>
+						<div class="infoOpcion">
+							contacto@conbuenpie.com.ve
+						</div>
+					</div>
+					<div class="opcionInfo">
+						<div class="tituloOpcionInfo">Twitter:</div>
+						<div class="infoOpcion">
+							<a href="https://twitter.com/conbuenpiemcbo"
+							 class="twitter-follow-button" data-show-count="true" data-lang="en">Seguir a @conbuenpiemcbo</a>
+						</div>
+					</div>
+					<div class="opcionInfo ">
+						<div class="tituloOpcionInfo">Facebook:</div>
+						<div class="infoOpcion">
+							<div class="fb-like" data-href="http://facebook.com/conbuenpiemcbo" 
+							data-width="300" data-layout="button_count" data-show-faces="true" data-send="true"></div>
+						</div>
+					</div>
+					<div class="opcionInfo ">
+						<div class="tituloOpcionInfo">Google+:</div>
+						<div class="infoOpcion">
+							<!-- Place this tag where you want the badge to render. -->
+							<div class="g-plus" data-width="300" data-href="//plus.google.com/101327765584320539080" data-rel="publisher"></div>
+							<!-- Place this tag after the last badge tag. -->
+							<script type="text/javascript">
+							  window.___gcfg = {lang: 'es-419'};
+
+							  (function() {
+							    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+							    po.src = 'https://apis.google.com/js/plusone.js';
+							    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+							  })();
+							</script>
+						</div>
 					</div>
 				</div>
 				{% if success %}
@@ -118,7 +153,15 @@ Con Buen Pie - Inicio
 			{% endif %}
 			</div>
 		</div>
-	</section>	
+	</section>
+	<!-- GALERIA SCRIPT -->
+	<script>
+		$(window).load(function() {
+		  $('.flexslider').flexslider({
+		    animation: "fade"
+		  });
+		});
+	</script>
 	<!-- Google+ SCRIPT --> 
 		<!-- Place this tag after the last badge tag. -->
 		<script  async type="text/javascript">

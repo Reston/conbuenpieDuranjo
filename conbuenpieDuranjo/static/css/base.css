@@ -147,6 +147,7 @@ nav ul li a{
 .titulo{
 	text-transform: uppercase;
 	font-size: 2.5em;
+	padding-bottom: 25px;
 }
 .mataCosita{
 	position: absolute;
@@ -156,6 +157,10 @@ nav ul li a{
 	width: 75px;
 	height: 80px;
 	z-index: 1;
+}
+.sliderPosition{
+	width: 635px;
+	height: 475px;
 }
 .endless_page_template ul{
 	list-style: none;
@@ -168,6 +173,7 @@ nav ul li a{
 }
 .foto{
 	width: 150px;
+	height: 125px;
 }
 .logoblanco{
 	background: url(../img/logoengaleria.png) no-repeat 0 0;
@@ -178,19 +184,20 @@ nav ul li a{
 	background: url(../img/pajaros.png) no-repeat;
 	width: 506px;
 	height: 196px;
-	margin-top: 30px;
 }
 .imagenGrande{
 	position: relative;
 	background: url(../img/cuadro.png) no-repeat;
-	width: 691px;
-	height: 527px;
+	width: 632px;
+	height: 475px;
 	padding: 4%;
 	z-index: 5;
+	text-align: center;
 }
 .imagenGrande > img{
 	max-width: 634px;
 	max-height: 473px;
+	vertical-align: middle;
 }
 /* ==  Contacto == */
 .infoContacto{color: white}
@@ -293,6 +300,47 @@ input[type="submit"]{
 	text-transform: uppercase;
 }
 /* end form contacto css*/
+
+.infoContacto{
+	padding-top: 30px;
+}
+.cajaIzquierda, .cajaDerecha{
+	width: 60%;
+	margin: 0 auto 0 auto;
+}
+.tituloOpcionInfo{
+	background: #3F8F25;
+	box-shadow: 3px 3px 1px #000;
+	font-size: 1.2em;
+	width: 85%;
+	text-indent: 15px;
+	font-weight: bold;
+	padding: 5px 0;
+}
+.infoOpcion{
+	text-align: left;
+	font-size: 1.2em;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.telefonosNumeros{
+	list-style: none;
+	margin:0;
+}
+.infoDerecha{
+	display: inline-block;
+	width: 49.55%;
+}
+.infoIzquierda{
+	vertical-align: top;
+	display: inline-block;
+	width: 49.55%;
+}
+.opcionInfo{
+	position: relative;
+}
+
+
 /* FOOTER */
 footer{
 	color: white;

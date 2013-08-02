@@ -180,7 +180,7 @@ TEMPLATE_CONTEXT_PROCESSORS += (
     'django.core.context_processors.request',
 )
 
-ENDLESS_PAGINATION_PER_PAGE = 8
+ENDLESS_PAGINATION_PER_PAGE = 5
 
 #Configuraciones para enviar mensajes usando gmail
 EMAIL_USE_TLS = True
