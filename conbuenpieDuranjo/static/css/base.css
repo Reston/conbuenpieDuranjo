@@ -11,7 +11,7 @@ h1{
 	margin: 0;
 	color: white;
 	font-family: 'Lobster', Helvetica, Arial;
-	text-shadow: 9px 7px 1px rgba(0, 0, 0, 0.53);
+	text-shadow: 7px 7px 3px rgba(0, 0, 0, 0.25);
 	font-size: 2.8em;
 }
 .wrapper{
@@ -135,6 +135,7 @@ nav ul li a{
 	width: 62%;
 	display: inline-block;
 	vertical-align: top;
+	padding-top: 40px;
 }
 .aboutus .info{
 	padding: 0 0 0 40px;
@@ -178,7 +179,7 @@ nav ul li a{
 .logoblanco{
 	background: url(../img/logoengaleria.png) no-repeat 0 0;
 	height: 85px;
-	margin: 0 auto 0 auto;
+	margin: 0 auto 40px auto;
 }
 .pajaritos{
 	background: url(../img/pajaros.png) no-repeat;
@@ -191,6 +192,7 @@ nav ul li a{
 	width: 632px;
 	height: 475px;
 	padding: 4%;
+	margin-bottom: 50px;
 	z-index: 5;
 	text-align: center;
 }
@@ -377,7 +379,7 @@ footer{
 
 /* Configuración pagination */
 .endless_page_template{
-	margin-bottom: 25px;
+	margin-bottom: 150px;
 }
 .pagination{
 	text-align: center;
@@ -562,7 +564,7 @@ footer{
 	display: block;
 	margin: 0 auto 7px auto;
 	font-size: 0;
-	background: rgb(75, 75, 75) url(../img/up-arrow.png) no-repeat center center;
+	background: #16a085 url(../img/up-arrow.png) no-repeat center center;
 
 	/* rounded corners */
 	-webkit-border-radius: 15px;
