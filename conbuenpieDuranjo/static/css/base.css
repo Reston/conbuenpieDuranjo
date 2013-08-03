@@ -159,6 +159,15 @@ nav ul li a{
 	height: 80px;
 	z-index: 1;
 }
+.mataCosita3{
+	position: absolute;
+	top: -32px;
+	left: 80%;
+	background: url(../img/cositas.png) 35px 0;
+	width: 35px;
+	height: 70px;
+	z-index: 1;
+}
 .sliderPosition{
 	width: 635px;
 	height: 475px;
@@ -221,6 +230,7 @@ nav ul li a{
 	margin: 0;
 }
 .sectionContacto{
+	position: relative;
 	vertical-align: top;
 	display: inline-block;
 	width: 33%;
